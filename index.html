@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecos ~ Fundación Pescar 2023</title>
+    <meta name="description" content="Ecos Proyecto Pescar 2023.">
+    <meta property="og:title" content="Ecos @Pescar">
+    <meta property="og:description" content="Ecos Proyecto Pescar 2023.">
+    <meta property="og:url" content="https://eco-s.vercel.app">
+    <meta property="og:site_name" content="Ecos Proyecto Pescar 2023.">
+    <meta property="og:image" content="https://eco-s.vercel.app/img/og_image.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ecos Proyecto Pescar 2023.">
+    <meta name="twitter:description" content="Ecos Proyecto Pescar 2023.">
+    <meta name="twitter:image" content="https://eco-s.vercel.app/img/og_image.png">
+    <link rel="icon" href="favicon.ico" />
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+.formPost{
+  display: flex;
+  border: 1px solid;
+  padding: 1.25em 1.75em;
+  gap: 1em;
+}
+
+.formPost img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.formPost img:nth-child(1){
+  max-width: 48px;
+  border-radius: 50%;
+  margin-bottom: auto;
+}
+
+.formPost form{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  width: 100%;
+  height: 100%;
+}
+
+.formPost form div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formPost textarea{
+  resize: none;
+  overflow-y: scroll;
+  min-height: 100%;
+  width: 100%;
+  font-size: 1.1em;
+  outline: transparent;
+  border: none;
+  background-color: transparent;
+  transition: height .5s;
+}
+
+.formPost label svg{
+  cursor: pointer;
+}
+
+.formPost .postImage{
+  position: relative;
+}
+
+.formPost .postImage button{
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: .75em 1em;
+  font-size: 1em;
+  font-weight: bold;
+  top: 0;
+  right: 0;
+}
+
+.dark .formPost .postImage button{
+  background-color: #fff;
+  color: #000;
+}
+
+.formPost button[type="submit"]{
+  padding: .5em 1em;
+  font-weight: 600;
+  background-color: #007c64;
+  color: #fff;
+}
+
+.authForm{
+  display: grid;
+  width: 95%;
+  max-width: 320px;
+  height: fit-content;
+  padding: 2em;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  margin: auto;
+  background-color: #fff;
+  transition: background-color .2s ease-in-out;
+}
+
+.dark .authForm{
+  background-color: #ffffff13;
+}
+
+.authForm p{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+.authForm label{
+  font-weight: 500;
+  margin-bottom: .25em;
+}
+
+.authForm input{
+  padding: .5em;
+  font-size: .85em;
+  margin-bottom: .5em;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  border-radius: .5em;
+}
+
+.formInline button[type="submit"],
+.authForm button[type="submit"]{
+  background-color: #007c64;
+  color: #fff;
+  padding: .5em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.formInline{
+  display: flex;
+  width: 100%;
+  border: 1px solid currentColor;
+  border-radius: .5em;
+  overflow: hidden;
+}
+
+.formInline input{
+  width: 100%;
+  border: none;
+  text-indent: 10px;
+}
+
+.formInline button{
+  border-radius: 0;
+}

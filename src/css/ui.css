@@ -1,0 +1,102 @@
+.notfound{
+  display: grid;
+  place-items: center;
+}
+
+.notfound p{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.notfound p:nth-of-type(1){
+  font-size: 4.5em;
+}
+
+.notfound a{
+  margin-top: 1.5em;
+  border: 1px solid currentColor;
+  padding: .5em 1em;
+  font-weight: 500;
+}
+
+.softScrollbar::-webkit-scrollbar {
+  width: .75em;
+}
+
+.softScrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+ 
+.softScrollbar::-webkit-scrollbar-thumb {
+  background-color: currentColor;
+  border-radius: 5%;
+}
+
+.softScrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.twoTone div:first-of-type{
+  display: flex;
+}
+
+.twoTone a{
+  font-weight:600;
+}
+
+.twoTone div a{
+  padding: .5em 1em;
+  border-radius: .5em;
+}
+
+.twoTone a:nth-of-type(2){
+  background-color: #000;
+  color: #fff;
+}
+
+.dark .twoTone a:nth-of-type(2){
+  background-color: #fff;
+  color: #000;
+}
+
+/* ingresar como usuario invitado */
+
+.demo{
+  border: 1px solid #ccc;
+  font-weight: 600;
+  padding: .75em 1em;
+  border-radius: .5em;
+  margin: 1.5em auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.pressable{
+  transition: transform .2s cubic-bezier(0,0,.2,1);
+}
+
+.pressable:active{
+  animation: pressable 2s cubic-bezier(0,0,.2,1);
+}
+
+@keyframes pressable {
+  0% {
+    transform: scale(.98);
+  }
+
+  40% {
+    transform: scale(1.01);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
