@@ -42,7 +42,7 @@ export default function SignUp() {
         <label htmlFor="username">Usuario</label>
         <input type="text" name="username" id="username" placeholder="Usuario" />
 
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Contraseña</label>
         <input type="text" name="password" id="password" placeholder="Contraseña" />
 
         <label htmlFor="name">Nombre</label>
