@@ -26,7 +26,7 @@ const Profile = () => {
   return (
     <>
       <Helmet>
-        <title>Mi Perfil</title>
+        <title>Perfil</title>
       </Helmet>
       <main>
         <h2>Perfil de {user.name}</h2>
